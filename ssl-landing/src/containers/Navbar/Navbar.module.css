@@ -1,0 +1,36 @@
+.container{
+  margin:  -204px  -8px!important;
+  padding: 16px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.right-btn{
+  display: inline-flex;
+  grid-gap: 24px;
+  color: var(--white);
+}
+
+.lg-btn{
+  color: var(--gray-dark);
+  width: max-content;
+  height: 40px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+.lg-btn:active{
+  color: var(--white);
+}
+
+.menu-btn{
+  margin-right: 24px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}

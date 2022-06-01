@@ -1,0 +1,73 @@
+:root {
+  --white: #FAFAFA;
+  --purple: #767EEA;
+  --blue: #4DA4DA;
+  --green: #23CACA;
+  --black: #060040;
+  --gray-light: #BDBCC9;
+  --gray-dark: #6A6971;
+  --liner: gradient(180deg, #23CACA 0%, #767EEA 100%);
+  --mirror: rgba(250, 250, 250, 0.16);
+
+  --cards-shadow: inset 0px -2px 13px rgba(0, 0, 0, 0.25);
+
+  --ff: PS;
+
+  --fs-b: 18px;
+  --fs-h2: 24px;
+  --fs-h1: 48px;
+
+}
+
+@font-face {
+  font-family: "PS";
+  src: url("./resources/font/ProximaSoft-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PS-l";
+  src: url("./resources/font/ProximaSoft-Light.ttf") format("truetype");
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--white);
+  /*
+  background-image: url("./resources/img/back.svg");*/
+  font-family: "PS" !important;
+  background-color: #000000;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 88px;
+  font-family: "PS";
+}
+
+h2{
+  font-size: var(--fs-h1);
+  font-family: "PS";
+  line-height: 0.1;
+}
+
+@media (max-width: 320px) {
+  .content {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 100%;
+    margin-left: 64px;
+    margin-right:  64px;
+
+  }
+}
+
+@media (min-width: 1400px) {
+  
+}

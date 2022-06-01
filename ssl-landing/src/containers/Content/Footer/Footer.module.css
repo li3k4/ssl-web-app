@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+}
+
+.item-footer{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 0px 16px;
+}
+.footer a{
+    color: var(--white);
+    text-decoration-color: rgb(0, 0,0, 0.001);
+    line-height: 150%;
+}
+
+.footer a:hover {
+ text-decoration-color: var(--white);
+}

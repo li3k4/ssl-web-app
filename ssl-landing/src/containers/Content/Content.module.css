@@ -1,0 +1,46 @@
+.content {
+  margin-top: 204px;
+}
+
+.name {
+  margin-top: 30;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  line-height: 32px;
+  text-transform: uppercase;
+
+}
+
+.name_solar {
+
+}
+
+.sub-text {
+  font-size: var(--fs-b);
+  margin: 64px 0px 0px 64px;
+  font-family: PS-l;
+  line-height: 159%;
+  letter-spacing: 0.05em;
+}
+
+.item-text-h1 {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.item-text {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+}
+
+.item-text-sub {
+  font-size: var(--fs-b);
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
