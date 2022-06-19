@@ -1,0 +1,143 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-first-page {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.s {
+  font-weight: 800;
+}
+
+.sl {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  color: transparent;
+  font-weight: 400;
+}
+
+.btn-contact {
+  color: var(--white);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: #000A26;
+  box-shadow: 25px 25px 60px rgba(0, 0, 0, 0.3), -25px -25px 60px rgba(0, 10, 61, 0.25);
+}
+
+.item-web {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.item-netman {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.item-netman-img {
+  width: 50vw;
+  object-fit: contain;
+}
+
+.item-5dim {
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--white);
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.item-5dim-img {
+  width: 50vw;
+  object-fit: contain;
+}
+
+.footer_down {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_email-btn {
+  font-size: 12vw;
+  margin: 48px 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.item-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 24px;
+}
+
+
+.footer a:hover {
+  text-decoration-color: var(--white);
+}
+
+
+@media (max-width: 320px) {
+  .item-netman{
+    flex-direction: column;
+  }
+  .item-netman-img{
+    width: 168vw;
+  }
+  .item-5dim {
+    flex-direction: column;
+  }
+  .item-5dim-img{
+    width: 168vw;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .item-netman-img{
+    width: 90vw;
+  }
+  .item-5dim-img{
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .item-netman-img{
+    width: 50vw;
+  }
+  .item-5dim-img{
+    width: 50vw;
+  }
+
+}
