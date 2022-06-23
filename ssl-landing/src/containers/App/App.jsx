@@ -92,10 +92,23 @@ const App = () => {
       </ScrollPage>
 
       <ScrollPage page={4}>
-        <Animator animation={ZoomScrollOut}>
+        <Animator animation={batch( FadeIn(), Sticky(), MoveIn(1000,0), MoveOut(0, -300))}>
           <h1>Desktop</h1>
         </Animator>
       </ScrollPage>
+
+      <ScrollPage page={5}>
+        <Animator animation={"batch(MoveIn(1000, 0), MoveOut())"}>
+          <div className={styles["item-5dim"]}>
+            <h3>5 Dimension</h3>
+            <img
+              className={styles["item-5dim-img"]}
+              src="https://cdn.dribbble.com/users/8794301/screenshots/18561221/media/a77896f92b7020f27ae39e6eb69bbcaa.png?compress=1&resize=1000x750&vertical=top"
+            ></img>
+          </div>
+        </Animator>
+      </ScrollPage>
+
       <ScrollPage>
         <Animator>
         <div className={styles["footer_down"]} id="down">
