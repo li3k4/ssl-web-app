@@ -94,6 +94,18 @@ font-size: 16px;
 line-height: 160%;
 letter-spacing: 0.03em;
 }
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 106px;
+  cursor: pointer;
+  padding: 1em 2.6em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 @media (max-width: 320px) {
 
@@ -120,8 +132,6 @@ html, body {
 
 body {
   font-family: "Proxima Soft";
-  color: var(--text-color);
-  background: var(--bg-color);
   transition: 0.3s ease-out;
   overflow-x: hidden;
   max-width: 100%;
@@ -132,7 +142,7 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   opacity: 1;
-  background-color: #000A26;
+  background-color: var(--black);
   font-family: PS;
   color: var(--white);
 }
