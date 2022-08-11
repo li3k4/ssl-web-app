@@ -1,0 +1,261 @@
+.body {
+ /* display: flex;
+  flex-direction: column;*/
+}
+
+.page1{
+  margin-top: 20vh;
+  gap: 35vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.ssl {
+  width: 40%;
+}
+
+.scene-spline{
+margin-top: 10vw;
+width: 1000%;
+height: 1000%;
+
+}
+
+
+.btn-contact {
+
+  border-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 0 40px 40px var(--white) inset, 0 0 0 0 var(--white);
+  transition: all 150ms ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: inherit;
+  color: var(--white);
+  box-shadow: 0 0 10px 0 var(--white) inset, 0 0 10px 4px var(--white);
+}
+
+.page2 {
+  width: max-content;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
+  height: 340px;
+  margin-top: 10%;
+}
+
+.item-2 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.table {
+  padding: 4vw 12vw 0vw 12vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 4vw;
+}
+
+.table-head-sub {
+  max-width: 603px;
+}
+
+.table-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #BDBCC9;
+  padding: 16px 0px;
+  gap: 10px;
+}
+
+.table-li-span {
+  display: flex;
+  justify-content: flex-end;
+  width: 46%;
+}
+
+.table-li-last {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #BDBCC9;
+  padding: 16px 0px;
+  gap: 10px;
+  border-bottom: 1px solid #BDBCC9;
+}
+
+.page4 {
+  background-image: url("../../resources/img/rmwood.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100rem;
+}
+
+.page5 {
+
+  height: auto;
+}
+
+.page6 {
+  background-image: url("../../resources/img/panorama.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100rem;
+}
+
+.mirror-word {
+  display: flex;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+
+  color: rgba(252, 252, 252, 0.16);
+  justify-content: center;
+  padding-top: 23rem;
+
+}
+
+.page7 {
+  width: 100vmax;
+  height: 100vmax;
+
+}
+
+
+.page8 {
+  background-image: url("../../resources/img/vim.png") !important;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100rem;
+}
+
+
+
+
+
+
+.footer_down {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_email-btn {
+  font-size: 12vw;
+  margin: 48px 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.item-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 24px;
+}
+
+
+.footer a:hover {
+  text-decoration-color: var(--white);
+}
+
+
+@media (max-width: 426px) {
+  .item-second-page {
+    flex-direction: column;
+  }
+
+  .table-ul {
+    margin: 0px 16px 0px 16px;
+  }
+  .ssl {
+    width: 100%;
+  }
+
+
+
+  .item-first-page {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    padding: 0.8em 2.4em;
+
+  }
+  .page2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-netman-img {
+    width: 90vw;
+  }
+
+  .item-5dim-img {
+    width: 90vw;
+  }
+  .ssl {
+    width: 100%;
+  }
+
+
+}
+
+@media (min-width: 1400px) {
+  .item-netman-img {
+    width: 50vw;
+  }
+
+  .item-5dim-img {
+    width: 50vw;
+  }
+
+}

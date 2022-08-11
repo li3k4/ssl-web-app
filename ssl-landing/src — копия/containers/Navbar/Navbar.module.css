@@ -1,0 +1,40 @@
+.container{
+  width: 100%; 
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.right-btn{
+  display: inline-flex;
+  grid-gap: 32px;
+  color: var(--white);
+  font-size: 20px;
+  margin-right: 32px;
+}
+
+.lg-btn{
+  color: var(--gray-dark);
+  width: max-content;
+  height: 40px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+.lg-btn:active{
+  color: var(--white);
+}
+
+.menu-btn{
+  margin-right: 24px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+.logo{
+  width: 6vh;
+}
