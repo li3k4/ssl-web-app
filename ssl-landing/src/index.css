@@ -59,7 +59,7 @@ h{
 
 h1 {
   font-size: 40px ;
-  line-height: 0.6;
+  line-height: 0.9;
   margin-bottom: 1rem;
   hyphens: auto;
 }
@@ -112,9 +112,13 @@ button {
 }
 
 
-@media (min-width: 1400px) {
-  
+@media (max-width: 768px) {
+  h1{
+    font-size: 36px;
+  }
 }
+
+
 @media (min-width: 1400px) {
 
   h2 {

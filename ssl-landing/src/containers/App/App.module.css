@@ -22,10 +22,7 @@ width: 1000%;
 height: 1000%;
 
 }
-
-
 .btn-contact {
-
   border-color: var(--white);
   color: var(--black);
   box-shadow: 0 0 40px 40px var(--white) inset, 0 0 0 0 var(--white);
@@ -50,12 +47,14 @@ height: 1000%;
   height: 340px;
   margin-top: 10%;
 }
-
 .item-2 {
   justify-content: center;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.page2-h1{
+  line-height: 0.1;
 }
 
 
@@ -64,18 +63,15 @@ height: 1000%;
   display: flex;
   flex-direction: column;
 }
-
 .table-head {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding-bottom: 4vw;
 }
-
 .table-head-sub {
   max-width: 603px;
 }
-
 .table-li {
   display: flex;
   flex-direction: row;
@@ -85,13 +81,11 @@ height: 1000%;
   padding: 16px 0px;
   gap: 10px;
 }
-
 .table-li-span {
   display: flex;
   justify-content: flex-end;
   width: 46%;
 }
-
 .table-li-last {
   display: flex;
   flex-direction: row;
@@ -115,7 +109,6 @@ height: 1000%;
 }
 
 .page5 {
-
   height: auto;
 }
 
@@ -149,7 +142,7 @@ height: 1000%;
 
 
 .page8 {
-  background-image: url("../../resources/img/vim.png") !important;
+  background-image: url("../../resources/img/vim.png");
   background-position: center;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -203,9 +196,12 @@ height: 1000%;
   .item-second-page {
     flex-direction: column;
   }
+  .table{
+    padding: 4vw;
+  }
 
   .table-ul {
-    margin: 0px 16px 0px 16px;
+    margin: 0px;
   }
   .ssl {
     width: 100%;
@@ -223,29 +219,45 @@ height: 1000%;
 
   }
   .page2 {
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
   }
-  
+
   .footer {
     flex-direction: column;
   }
 }
 
+
+
 @media (max-width: 768px) {
   .item-netman-img {
     width: 90vw;
   }
-
+  .table-li{
+    padding: 8px 0px;
+  }
+  .table-li-span{
+    justify-content: flex-start;
+    width: auto;
+  }
   .item-5dim-img {
     width: 90vw;
   }
   .ssl {
     width: 100%;
   }
-
+  .page2{
+    height: 100vh;
+  }
+  .page4{
+    background-image: url("../../resources/img/rmwoodMB.png");
+  }
+  .page8{
+    background-image: url("../../resources/img/vimMB.png");
+  }
 
 }
 

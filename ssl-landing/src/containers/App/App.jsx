@@ -39,7 +39,7 @@ const App = () => {
                 onClick={() => scroll.scrollToBottom()}
                 className={styles["btn-contact"]}
               >
-                Contact
+                Контакты
               </button>
             </div>
           </Animator>
@@ -49,20 +49,20 @@ const App = () => {
           <Animator animation={batch("StickyOut(), Fade()")}>
             <div className={styles["page2"]}>
               <div className={styles["item-2"]}>
-                <h1>15</h1>
+                <h1 className={styles["page2-h1"]}>15</h1>
                 <span>Веб-сайтов</span>
               </div>
               <div className={styles["item-2"]}>
-                <h1>9</h1>
+                <h1 className={styles["page2-h1"]}>9</h1>
                 <span>Проектов</span>
               </div>
               <div className={styles["item-2"]}>
-                <h1>2022</h1>
+                <h1 className={styles["page2-h1"]}>2022</h1>
                 <span>Год основания</span>
               </div>
               <div className={styles["item-2"]}>
-                <h1>30</h1>
-                <span>Постоянных заказчиков</span>
+                <h1 className={styles["page2-h1"]}>30</h1>
+                <span>Заказчиков</span>
               </div>
             </div>
           </Animator>
@@ -78,8 +78,8 @@ const App = () => {
               <div className={styles["table-head"]}>
                 <h1>Разработка и поддержка сайтов</h1>
                 <span className={styles["table-head-sub"]}>
-                  Создание сайтов любой сложности: от одностраничника-лендинга
-                  до интернет-магазином со встроенной CRM-системой.
+                  Создание сайтов любой сложности: от лендинга
+                  до интернет-магазина со встроенной CRM-системой.
                 </span>
               </div>
 
@@ -98,7 +98,7 @@ const App = () => {
                 </li>
                 <li className={styles["table-li"]}>
                   <div className={styles["table-li-span"]}>
-                    Создание дизайна. Согласование.
+                    Создание и согласование дизайна.
                   </div>{" "}
                   <span>03</span>
                 </li>
@@ -155,7 +155,7 @@ const App = () => {
                 </li>
                 <li className={styles["table-li"]}>
                   <div className={styles["table-li-span"]}>
-                    Логотипы и брендбук (фирменный стиль Вашего бренда).{" "}
+                    Логотип и брендбук (фирменный стиль вашего бренда).{" "}
                   </div>
                   <span>03</span>
                 </li>
@@ -226,14 +226,14 @@ const App = () => {
                 </li>
                 <li className={styles["table-li"]}>
                   <div className={styles["table-li-span"]}>
-                    Подберка и настройка CRM-системы.
+                    Подборка и настройка CRM-системы.
                   </div>{" "}
                   <span>04</span>
                 </li>
                 <li className={styles["table-li"]}>
                   <div className={styles["table-li-span"]}>
                     {" "}
-                    Подберка техники под специфику Вашего бизнеса.
+                    Подборка техники под специфику Вашего бизнеса.
                   </div>
                   <span>05</span>{" "}
                 </li>
