@@ -1,7 +1,6 @@
-import React, { Suspense } from "react";
-import { useRef, useState } from "react";
+import React from "react";
 import styles from "./App.module.css";
-import Spline from "@splinetool/react-spline";
+import ThreeSixty from "react-360-view";
 import {
   Animator,
   ScrollContainer,
@@ -22,7 +21,7 @@ import {
 } from "react-scroll-motion";
 
 import { animateScroll as scroll } from "react-scroll";
-import ssl from "../../resources/img/ssl.png";
+import v from "../../resources/v.mp4";
 
 const ZoomScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
@@ -31,10 +30,16 @@ const App = () => {
     <>
       <ScrollContainer>
         <ScrollPage page={1}>
-          <Animator animation={batch()}>
+          <Animator animation={batch(Zoom())}>
             <div className={styles["page1"]}>
-         
-              <img className={styles["ssl"]} src={ssl}></img>
+              <video
+                className={styles["ssl-v"]}
+                src={v}
+                muted
+                autoPlay
+                loop
+                playsinline
+              ></video>
               <button
                 onClick={() => scroll.scrollToBottom()}
                 className={styles["btn-contact"]}
@@ -48,19 +53,19 @@ const App = () => {
         <ScrollPage page={2}>
           <Animator animation={batch("StickyOut(), Fade()")}>
             <div className={styles["page2"]}>
-              <div className={styles["item-2"]}>
+              <div className={styles["page2-item"]}>
                 <h1 className={styles["page2-h1"]}>15</h1>
                 <span>Веб-сайтов</span>
               </div>
-              <div className={styles["item-2"]}>
+              <div className={styles["page2-item"]}>
                 <h1 className={styles["page2-h1"]}>9</h1>
                 <span>Проектов</span>
               </div>
-              <div className={styles["item-2"]}>
+              <div className={styles["page2-item"]}>
                 <h1 className={styles["page2-h1"]}>2022</h1>
                 <span>Год основания</span>
               </div>
-              <div className={styles["item-2"]}>
+              <div className={styles["page2-item"]}>
                 <h1 className={styles["page2-h1"]}>30</h1>
                 <span>Заказчиков</span>
               </div>
@@ -78,8 +83,8 @@ const App = () => {
               <div className={styles["table-head"]}>
                 <h1>Разработка и поддержка сайтов</h1>
                 <span className={styles["table-head-sub"]}>
-                  Создание сайтов любой сложности: от лендинга
-                  до интернет-магазина со встроенной CRM-системой.
+                  Создание сайтов любой сложности: от лендинга до
+                  интернет-магазина со встроенной CRM-системой.
                 </span>
               </div>
 
@@ -137,43 +142,45 @@ const App = () => {
 
         <ScrollPage page={5}>
           <Animator animation={""}>
-            <div className={styles["table"]}>
-              <div className={styles["table-head"]}>
-                <h1>Графический дизайн</h1>
-              </div>
+            <div className={styles["page5"]}>
+              <div className={styles["table"]}>
+                <div className={styles["table-head"]}>
+                  <h1>Графический дизайн</h1>
+                </div>
 
-              <ul className={styles["table-ul"]}>
-                <li className={styles["table-li"]}>
-                  <div className={styles["table-li-span"]}>
-                    Контент для соцсетей.
-                  </div>{" "}
-                  <span>01</span>
-                </li>
-                <li className={styles["table-li"]}>
-                  <div className={styles["table-li-span"]}>Макет сайта.</div>{" "}
-                  <span>02</span>
-                </li>
-                <li className={styles["table-li"]}>
-                  <div className={styles["table-li-span"]}>
-                    Логотип и брендбук (фирменный стиль вашего бренда).{" "}
-                  </div>
-                  <span>03</span>
-                </li>
-                <li className={styles["table-li"]}>
-                  <div className={styles["table-li-span"]}>Баннеры.</div>{" "}
-                  <span>04</span>
-                </li>
-                <li className={styles["table-li"]}>
-                  <div className={styles["table-li-span"]}>Презентации.</div>{" "}
-                  <span>05</span>
-                </li>
-                <li className={styles["table-li-last"]}>
-                  <div className={styles["table-li-span"]}>
-                    Иллюстрации и изображения.
-                  </div>
-                  <span>06</span>{" "}
-                </li>
-              </ul>
+                <ul className={styles["table-ul"]}>
+                  <li className={styles["table-li"]}>
+                    <div className={styles["table-li-span"]}>
+                      Контент для соцсетей.
+                    </div>{" "}
+                    <span>01</span>
+                  </li>
+                  <li className={styles["table-li"]}>
+                    <div className={styles["table-li-span"]}>Макет сайта.</div>{" "}
+                    <span>02</span>
+                  </li>
+                  <li className={styles["table-li"]}>
+                    <div className={styles["table-li-span"]}>
+                      Логотип и брендбук (фирменный стиль вашего бренда).{" "}
+                    </div>
+                    <span>03</span>
+                  </li>
+                  <li className={styles["table-li"]}>
+                    <div className={styles["table-li-span"]}>Баннеры.</div>{" "}
+                    <span>04</span>
+                  </li>
+                  <li className={styles["table-li"]}>
+                    <div className={styles["table-li-span"]}>Презентации.</div>{" "}
+                    <span>05</span>
+                  </li>
+                  <li className={styles["table-li-last"]}>
+                    <div className={styles["table-li-span"]}>
+                      Иллюстрации и изображения.
+                    </div>
+                    <span>06</span>{" "}
+                  </li>
+                </ul>
+              </div>
             </div>
           </Animator>
         </ScrollPage>
@@ -185,7 +192,11 @@ const App = () => {
             )}
           >
             <div className={styles["page6"]}>
-              <h1 className={styles["mirror-word"]}> PANORAMA</h1>
+              <ThreeSixty
+                amount={36}
+                imagePath="https://scaleflex.cloudimg.io/width/600/q35/https://scaleflex.ultrafast.io/https://scaleflex.airstore.io/demo/chair-360-36"
+                fileName="chair_{index}.jpg?v1"
+              />
             </div>
           </Animator>
         </ScrollPage>

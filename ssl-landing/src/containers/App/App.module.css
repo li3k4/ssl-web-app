@@ -4,23 +4,15 @@
 }
 
 .page1{
-  margin-top: 20vh;
-  gap: 35vh;
+  margin-top: 18vh;
+  gap: 10vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
-.ssl {
+.ssl-v {
   width: 40%;
-}
-
-.scene-spline{
-margin-top: 10vw;
-width: 1000%;
-height: 1000%;
-
 }
 .btn-contact {
   border-color: var(--white);
@@ -28,7 +20,6 @@ height: 1000%;
   box-shadow: 0 0 40px 40px var(--white) inset, 0 0 0 0 var(--white);
   transition: all 150ms ease-in-out;
 }
-
 .btn-contact:hover {
   background-color: inherit;
   color: var(--white);
@@ -37,17 +28,16 @@ height: 1000%;
 
 .page2 {
   width: max-content;
-  background-color: var(--white);
+  background: linear-gradient(180deg, #050525 0%, #FFFFFF 100%);
   color: var(--black);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
   box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
-  height: 340px;
-  margin-top: 10%;
+  height: 100vh;
 }
-.item-2 {
+.page2-item {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -113,33 +103,21 @@ height: 1000%;
 }
 
 .page6 {
-  background-image: url("../../resources/img/panorama.png");
-  background-position: center;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  height: 100rem;
 }
 
 .mirror-word {
   display: flex;
   letter-spacing: 0.03em;
   font-weight: 700;
-
   color: rgba(252, 252, 252, 0.16);
   justify-content: center;
   padding-top: 23rem;
-
 }
 
 .page7 {
   width: 100vmax;
   height: 100vmax;
-
 }
-
 
 .page8 {
   background-image: url("../../resources/img/vim.png");
@@ -151,8 +129,6 @@ height: 1000%;
   left: 0;
   height: 100rem;
 }
-
-
 
 
 
@@ -176,7 +152,7 @@ height: 1000%;
   align-items: flex-start;
   align-content: center;
   justify-content: center;
-  margin-bottom: 64px;
+
 }
 
 .item-footer {
@@ -193,25 +169,20 @@ height: 1000%;
 
 
 @media (max-width: 426px) {
-  .item-second-page {
-    flex-direction: column;
+  .page1{
+    margin-top: 33vh;
+    gap: 30vh;
   }
+  .ssl-v {
+    width: 88%;
+  }
+
   .table{
     padding: 4vw;
   }
 
   .table-ul {
     margin: 0px;
-  }
-  .ssl {
-    width: 100%;
-  }
-
-
-
-  .item-first-page {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   button {
@@ -224,8 +195,18 @@ height: 1000%;
     justify-content: space-evenly;
     flex-direction: column;
   }
+  .page4{
+    background-image: url("../../resources/img/rmwoodMB.png");
+  }
 
+  .page5{
+    margin-top: 16%;
+  }
+  .page8{
+    background-image: url("../../resources/img/vimMB.png");
+  }
   .footer {
+    margin-top: 48px;
     flex-direction: column;
   }
 }
@@ -233,9 +214,7 @@ height: 1000%;
 
 
 @media (max-width: 768px) {
-  .item-netman-img {
-    width: 90vw;
-  }
+
   .table-li{
     padding: 8px 0px;
   }
@@ -243,31 +222,12 @@ height: 1000%;
     justify-content: flex-start;
     width: auto;
   }
-  .item-5dim-img {
-    width: 90vw;
-  }
   .ssl {
     width: 100%;
   }
   .page2{
     height: 100vh;
   }
-  .page4{
-    background-image: url("../../resources/img/rmwoodMB.png");
-  }
-  .page8{
-    background-image: url("../../resources/img/vimMB.png");
-  }
 
-}
-
-@media (min-width: 1400px) {
-  .item-netman-img {
-    width: 50vw;
-  }
-
-  .item-5dim-img {
-    width: 50vw;
-  }
 
 }
